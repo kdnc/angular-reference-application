@@ -22,6 +22,11 @@ import { PageNotFoundComponent } from './page-not-found.component';
                 data: { preload: true },
                 loadChildren: 'app/forms/reactive-forms/reactive-forms.module#ReactiveFormModule'
             },
+            {
+                path: 'async-loader',
+                data: { preload: true },
+                loadChildren: 'app/loader/async-loader.module#AsyncLoaderModule'
+            },
             { path: '', redirectTo: 'welcome', pathMatch: 'full' },
             { path: '**', component: PageNotFoundComponent }
         ], { preloadingStrategy: SelectiveStrategy }) // , { enableTracing: true })
