@@ -9,8 +9,7 @@ import { MessageService } from './messages/message.service';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  pageTitle: string = 'Acme Product Management';
-  loading: boolean = true;
+  loading = true;
 
   constructor(private authService: AuthService,
               private messageService: MessageService,
