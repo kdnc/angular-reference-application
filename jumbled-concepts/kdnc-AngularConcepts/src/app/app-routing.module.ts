@@ -14,28 +14,28 @@ import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout.com
             component: MainLayoutComponent,
             children: [
               {
-                path: '', redirectTo: 'welcome', pathMatch: 'full',
+                path: '', redirectTo: 'home', pathMatch: 'full',
               },
-              { path: 'welcome', component: WelcomeComponent },
+              { path: 'home', component: WelcomeComponent },
               {
                 path: 'products',
                 canActivate: [ AuthGuard ],
                 data: { preload: true },
                 loadChildren: 'app/products/product.module#ProductModule'
               },
-            ]
-          },
-            {
+              {
                 path: 'reactive-forms',
                 data: { preload: true },
                 loadChildren: 'app/forms/reactive-forms/reactive-forms.module#ReactiveFormModule'
-            },
-            {
+              },
+              {
                 path: 'async-loader',
                 data: { preload: true },
                 loadChildren: 'app/loader/async-loader.module#AsyncLoaderModule'
-            },
-            { path: '**', redirectTo: 'welcome' }
+              },
+            ]
+          },
+          { path: '**', redirectTo: 'home' }
         ], { preloadingStrategy: SelectiveStrategy }) // , { enableTracing: true })
     ],
     providers: [ SelectiveStrategy ],
