@@ -1,0 +1,360 @@
+<aside id="left-panel">
+
+  <!-- User info -->
+  <kdnc-login-info></kdnc-login-info>
+  <!-- end user info -->
+
+  <nav>
+    <!-- NOTE: Notice the gaps after each icon usage <i></i>..
+    Please note that these links work a bit different than
+    traditional href="" links. See documentation for details.
+    -->
+
+    <ul saSmartMenu>
+
+        <li routerLinkActive="active">
+            <a routerLink="/home" title="Home">
+                <i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">{{'Home'}}</span></a>
+        </li>
+      <!--<li>
+        <a title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span
+          class="menu-item-parent">{{'Dashboard'}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/dashboard/analytics">{{'Analytics Dashboard'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/dashboard/social">{{'Social Wall'}}</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="top-menu-invisible">
+        <a href="#"><i class="fa fa-lg fa-fw fa-cube txt-color-blue"></i> <span class="menu-item-parent">{{'SmartAdmin Intel'}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/smartadmin/app-layouts"><i class="fa fa-gear"></i>
+              {{'App Layouts'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/smartadmin/prebuilt-skins"><i class="fa fa-picture-o"></i>
+              {{'Prebuilt Skins'}}</a>
+          </li>
+        </ul>
+      </li>
+
+      <li routerLinkActive="active">
+        <a routerLink="/outlook" title="Outlook">
+          <i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">{{'Outlook'}}</span><span
+          class="badge pull-right inbox-badge margin-right-13">14</span></a>
+      </li>
+
+      <li>
+        <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span
+          class="menu-item-parent">{{'Graphs'}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/graphs/flot-charts">{{'Flot Chart'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/graphs/morris-charts">{{'Morris Charts'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/graphs/sparklines">{{'Sparkline'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/graphs/easy-pie-charts">{{'Easy Pie Charts'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/graphs/dygraphs">{{'Dygraphs'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/graphs/chart-js">Chart.js</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/graphs/highchart-tables">Highchart Tables <span
+              class="badge pull-right inbox-badge bg-color-yellow">new</span></a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> <span
+          class="menu-item-parent">{{'Tables'}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/tables/normal">{{'Normal Tables'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/tables/datatables">{{'Data Tables'}} <span
+              class="badge inbox-badge bg-color-greenLight">v1.10</span></a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/tables/ngx-datatable">{{'Ngx Datatable'}} <span
+              class="badge inbox-badge bg-color-redLight">new</span></a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span
+          class="menu-item-parent">{{'Forms'}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/forms/elements">{{'Smart Form Elements'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/forms/layouts">{{'Smart Form Layouts'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/forms/validation">{{'Smart Form Validation'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/forms/bootstrap-elements">{{'Bootstrap Form Elements'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/forms/bootstrap-validation">{{'Bootstrap Form Validation'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/forms/plugins">{{'Form Plugins'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/forms/wizards">{{'Wizards'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/forms/editors">{{'Bootstrap Editors'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/forms/dropzone">{{'Dropzone'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/forms/image-cropping">{{'Image Cropping'}} <span
+              class="badge pull-right inbox-badge bg-color-yellow">new</span></a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> <span
+          class="menu-item-parent">{{'UI Elements'}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/general">{{'General Elements'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/buttons">{{'Buttons'}}</a>
+          </li>
+          <li>
+            <a href="#">{{'Icons'}}</a>
+            <ul>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/font-awesome"><i class="fa fa-plane"></i> {{'Font Awesome'}}</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/glyphicons"><i class="glyphicon glyphicon-plane"></i>
+                  {{'Glyph Icons'}}</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/ui/icons/flags"><i class="fa fa-flag"></i> {{'Flags'}}</a>
+              </li>
+            </ul>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/grid">{{'Grid'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/tree-views">{{'Tree View'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/ui/nestable-lists">{{'Nestable Lists'}}</a>
+          </li>
+           <li routerLinkActive="active">
+            <a routerLink="/ui/typography">{{'Typography'}}</a>
+          </li>
+          <li>
+            <a href="#">{{'Six Level Menu'}}</a>
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-fw fa-folder-open"></i> {{'Item #2'}}</a>
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa fa-fw fa-folder-open"></i> {{'Sub #2.1'}} </a>
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa fa-fw fa-file-text"></i> {{'Item#2.1.1'}}</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-fw fa-plus"></i>{{'Expand'}}</a>
+                        <ul>
+                          <li>
+                            <a href="#"><i class="fa fa-fw fa-file-text"></i>
+                              {{'File'}}</a>
+                          </li>
+                          <li>
+                            <a href="#"><i class="fa fa-fw fa-trash-o"></i>
+                              {{'Delete'}}</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-fw fa-folder-open"></i> {{'Item #3'}}</a>
+
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa fa-fw fa-folder-open"></i> {{'3ed Level'}}
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="#"><i class="fa fa-fw fa-file-text"></i>
+                          {{'File'}}</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa fa-fw fa-file-text"></i>
+                          {{'File'}}</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li routerLinkActive="active">
+        <a routerLink="/widgets" title="Widgets"><i class="fa fa-lg fa-fw fa-list-alt"></i><span
+          class="menu-item-parent">{{'Widgets'}}</span></a>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa fa-lg fa-fw fa-cloud"><em>3</em></i> <span
+          class="menu-item-parent">{{'Cool Features'}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/calendar" title="Calendar"><i
+              class="fa fa-lg fa-fw fa-calendar"></i> <span
+              class="menu-item-parent">{{'Calendar'}}</span></a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/maps"><i class="fa fa-lg fa-fw fa-map-marker"></i> <span class="menu-item-parent">{{'GMap Skins'}}</span><span
+              class="badge bg-color-greenLight pull-right inbox-badge">9</span></a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa fa-lg fa-fw fa-puzzle-piece"></i> <span
+          class="menu-item-parent">{{'App Views'}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/app-views/projects"><i class="fa fa-file-text-o"></i>
+              {{'Projects'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/app-views/blog"><i class="fa fa-paragraph"></i> {{'Blog'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/app-views/gallery"><i class="fa fa-picture-o"></i>
+              {{'Gallery'}}</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa fa-comments"></i> {{'Forum Layout'}}</a>
+            <ul>
+              <li routerLinkActive="active">
+                <a routerLink="/app-views/forum/general-view"><i class="fa fa-picture-o"></i>
+                  {{'General View'}}</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/app-views/forum/topic-view"><i class="fa fa-picture-o"></i>
+                  {{'Topic View'}}</a>
+              </li>
+              <li routerLinkActive="active">
+                <a routerLink="/app-views/forum/post-view"><i class="fa fa-picture-o"></i>
+                  {{'Post View'}}</a>
+              </li>
+            </ul>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/app-views/profile"><i class="fa fa-group"></i>
+              {{'Profile'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/app-views/timeline"><i class="fa fa-clock-o"></i>
+              {{'Timeline'}}</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">
+          <i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span
+          class="menu-item-parent">{{'E-Commerce'}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/e-commerce/orders" title="Orders"> {{'Orders'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/e-commerce/products-view" title="Products View"> {{'Products View'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/e-commerce/product-details" title="Products Detail"> {{'Products Detail'}}</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#"><i class="fa fa-lg fa-fw fa-windows"></i> <span
+          class="menu-item-parent">{{'Miscellaneous'}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/pricing-tables">{{'Pricing Tables'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/invoice">{{'Invoice'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/auth/login">{{'Login'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/auth/register">{{'Register'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/auth/forgot-password">{{'Forgot Password'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/auth/locked">{{'Locked Screen'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/error404">{{'Error 404'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/error500">{{'Error 500'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/blank">{{'Blank Page'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/email-template">{{'Email Template'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/search">{{'Search Page'}}</a>
+          </li>
+          <li routerLinkActive="active">
+            <a routerLink="/miscellaneous/ckeditor">{{'CK Editor'}}</a>
+          </li>
+        </ul>
+      </li>-->
+
+    </ul>
+  </nav>
+
+  <kdnc-minify-menu></kdnc-minify-menu>
+
+</aside>

@@ -15,6 +15,8 @@ import { PageNotFoundComponent } from './page-not-found.component';
 import { UserModule } from './user/user.module';
 import { MessageModule } from './messages/message.module';
 
+import { KdncLayoutModule } from './shared/layout/layout.module';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { MessageModule } from './messages/message.module';
     HttpClientModule,
     InMemoryWebApiModule.forRoot(ProductData, { delay: 1000 }),
     UserModule,
-    MessageModule
+    MessageModule,
+    KdncLayoutModule
   ],
   declarations: [
     AppComponent,

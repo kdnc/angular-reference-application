@@ -5,18 +5,26 @@ import { AuthGuard } from './user/auth-guard.service';
 import { SelectiveStrategy } from './selective-strategy.service';
 
 import { WelcomeComponent } from './home/welcome.component';
-import { PageNotFoundComponent } from './page-not-found.component';
+import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout.component';
 
 @NgModule({
     imports: [
         RouterModule.forRoot([
-            { path: 'welcome', component: WelcomeComponent },
-            {
+          { path: '',
+            component: MainLayoutComponent,
+            children: [
+              {
+                path: '', redirectTo: 'welcome', pathMatch: 'full',
+              },
+              { path: 'welcome', component: WelcomeComponent },
+              {
                 path: 'products',
                 canActivate: [ AuthGuard ],
                 data: { preload: true },
                 loadChildren: 'app/products/product.module#ProductModule'
-            },
+              },
+            ]
+          },
             {
                 path: 'reactive-forms',
                 data: { preload: true },
@@ -27,8 +35,7 @@ import { PageNotFoundComponent } from './page-not-found.component';
                 data: { preload: true },
                 loadChildren: 'app/loader/async-loader.module#AsyncLoaderModule'
             },
-            { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-            { path: '**', component: PageNotFoundComponent }
+            { path: '**', redirectTo: 'welcome' }
         ], { preloadingStrategy: SelectiveStrategy }) // , { enableTracing: true })
     ],
     providers: [ SelectiveStrategy ],
