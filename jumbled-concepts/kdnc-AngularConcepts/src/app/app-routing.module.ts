@@ -19,14 +19,8 @@ import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout.com
               { path: 'home', component: WelcomeComponent },
               {
                 path: 'products',
-                canActivate: [ AuthGuard ],
                 data: { preload: true },
                 loadChildren: 'app/products/product.module#ProductModule'
-              },
-              {
-                path: 'reactive-forms',
-                data: { preload: true },
-                loadChildren: 'app/forms/reactive-forms/reactive-forms.module#ReactiveFormModule'
               },
               {
                 path: 'async-loader',

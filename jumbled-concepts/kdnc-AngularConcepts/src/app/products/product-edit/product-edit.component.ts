@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { MessageService } from '../messages/message.service';
+import { MessageService } from '../../messages/message.service';
 
-import { IProduct } from './product';
-import { ProductService } from './product.service';
+import { IProduct } from '../product';
+import { ProductService } from '../product.service';
 
 @Component({
     templateUrl: './product-edit.component.html',

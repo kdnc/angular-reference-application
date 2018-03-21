@@ -3,11 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-
 @Component({
-    templateUrl: './reactive-form.component.html',
+    templateUrl: './product-add.component.html',
 })
-export class ReactiveFormComponent implements OnInit {
+export class ProductAddComponent implements OnInit {
 
   // Property for the user
   private user: any;

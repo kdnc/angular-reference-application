@@ -12,15 +12,10 @@
               <a [routerLink]="['/products']">Product List</a>
             </li>
             <li routerLinkActive="active">
-              <a [routerLink]="['/products', 0, 'edit']">Add Product</a>
+              <a [routerLink]="['/products', 'add']">Add Product</a>
             </li>
-            <li>
-              <span>Forms</span>
-              <ul>
-                <li routerLinkActive="active">
-                  <a [routerLink]="['/reactive-forms']">Reactive Forms</a>
-                </li>
-              </ul>
+            <li routerLinkActive="active">
+              <a [routerLink]="['/products', 0, 'edit']">Edit Product</a>
             </li>
             <li routerLinkActive="active">
               <a [routerLink]="['/async-loader']">Async Loader</a>
