@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { ProductAddComponent } from './product-add/product-add.component';
+import { ProductAddFormComponent } from './product-add/product-add-form/product-add-form.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
@@ -14,12 +15,16 @@ import { ProductService } from './product.service';
 import { ProductResolver } from './product-resolver.service';
 import { ProductEditGuard } from './product-guard.service';
 
+import { KdncECommerceModule } from '../shared/kdncECommerce.module';
+import {KdncECommerceValidationModule} from '../shared/forms/validation/kdncecommerce-validation.module';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [
     SharedModule,
     ReactiveFormsModule,
+    KdncECommerceValidationModule,
+    KdncECommerceModule,
     RouterModule.forChild([
       {
         path: '',
@@ -59,6 +64,7 @@ import { SharedModule } from '../shared/shared.module';
   ],
   declarations: [
     ProductAddComponent,
+    ProductAddFormComponent,
     ProductListComponent,
     ProductDetailComponent,
     ProductEditComponent,

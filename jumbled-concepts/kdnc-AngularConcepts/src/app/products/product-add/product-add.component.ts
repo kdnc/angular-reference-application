@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ProductService } from '../../shared/services/product/product.service';
 
 @Component({
     templateUrl: './product-add.component.html',
@@ -16,7 +17,7 @@ export class ProductAddComponent implements OnInit {
   signupForm: FormGroup;
 
   // Inject the formbuilder into the constructor
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private productService: ProductService) {}
 
   ngOnInit() {
 
@@ -47,10 +48,13 @@ export class ProductAddComponent implements OnInit {
   get terms() { return this.signupForm.get('terms'); }
 
   public onFormSubmit() {
-    if(this.signupForm.valid) {
+    if (this.signupForm.valid) {
       this.user = this.signupForm.value;
       console.log(this.user);
-      /* Any API call logic via services goes here */
+
+      // this.productService.saveProduct(this.user).subscribe(res => {
+      // }, error => {
+      // });
     }
   }
 

@@ -23,4 +23,14 @@ export class ProductService extends ResourceService<Product> {
     return super.list(new QueryOptions())
       .map((products) => products);
   }
+
+  // saveProduct(product: Product): Observable<Product> {
+    // const headers = new Headers({ 'Content-Type': 'application/json' });
+    // const options = new RequestOptions({ headers: headers });
+    //
+    // if (product.id === 0) {
+    //   return this.createProduct(product, options);
+    // }
+    // return this.updateProduct(product, options);
+  // }
 }

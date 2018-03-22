@@ -17,6 +17,8 @@ import { MessageModule } from './messages/message.module';
 
 import { KdncLayoutModule } from './shared/layout/layout.module';
 
+import { ProductService } from './shared/services/product/product.service';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -32,7 +34,9 @@ import { KdncLayoutModule } from './shared/layout/layout.module';
     WelcomeComponent,
     PageNotFoundComponent
   ],
-  providers: [],
+  providers: [
+    ProductService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
