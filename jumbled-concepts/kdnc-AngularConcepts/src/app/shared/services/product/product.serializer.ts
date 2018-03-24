@@ -9,17 +9,17 @@ export class ProductSerializer implements Serializer {
     const p = new Product();
 
     // p.id = caseJson.id;
-    p.Title = productJson.Title;
+    p.title = productJson.title;
 
     return p;
   }
 
   public toJson(p: Product): any {
-    const caseDto = {
+    const productDto = {
       // id: p.id,
-      Title: p.Title
+      title: p.title
     };
 
-    return caseDto;
+    return productDto;
   }
 }

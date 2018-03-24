@@ -4,11 +4,10 @@ import { Resource } from '../resource';
 export class Product extends Resource {
   public createdOn: moment.Moment;
   public createdBy: number;
-  public assignee: number;
-  public Title: string;
+  public title: string;
 
   constructor() {
     super();
-    this.Title = '';
+    this.title = '';
   }
 }
