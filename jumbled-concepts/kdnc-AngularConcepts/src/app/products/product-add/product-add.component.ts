@@ -12,10 +12,11 @@ export class ProductAddComponent implements OnInit {
   ngOnInit() { }
 
   handleNewProductAdded(product: Product) {
-    // this.productService.saveProduct(product).subscribe(res => {
-    //   console.log(res);
-    // }, error => {
-    // });
+    this.productService.saveProduct(product).subscribe(res => {
+      console.log(res);
+    }, error => {
+      console.log(error);
+    });
   }
 
 }

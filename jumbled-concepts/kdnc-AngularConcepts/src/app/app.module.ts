@@ -24,7 +24,7 @@ import { ProductService } from './shared/services/product/product.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    InMemoryWebApiModule.forRoot(ProductData, { delay: 1000 }),
+    // InMemoryWebApiModule.forRoot(ProductData, { delay: 1000 }),
     UserModule,
     MessageModule,
     KdncLayoutModule

@@ -19,7 +19,7 @@ export class ProductAddFormComponent implements OnInit {
   ngOnInit() {
     // Use the formbuilder to build the Form model
     this.addProductForm  = this.fb.group({
-      title: ['', Validators.required],
+      Title: ['', Validators.required],
     });
   }
 

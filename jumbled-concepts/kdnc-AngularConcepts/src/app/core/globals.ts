@@ -4,9 +4,9 @@ export let GLOBALS = new InjectionToken('globals');
 
 export const GlobalValues = {
   services: {
-    productService: 'productservice',
+    productService: 'http://localhost:7002/api',
   },
   endpoints: {
-    products: 'products',
+    products: 'product',
   }
 };

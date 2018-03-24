@@ -5,10 +5,10 @@ export class Product extends Resource {
   public createdOn: moment.Moment;
   public createdBy: number;
   public assignee: number;
-  public name: string;
+  public Title: string;
 
   constructor() {
     super();
-    this.name = '';
+    this.Title = '';
   }
 }
