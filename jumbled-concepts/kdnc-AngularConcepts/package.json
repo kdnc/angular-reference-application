@@ -4,8 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port=4000",
-    "build": "ng build --prod",
+    "start": "ng serve --port=4000 --env=dev",
+    "serve-dev": "ng serve --port=4000 --env=dev",
+    "serve-prod": "ng serve --port=4000 --env=prod",
+    "build-dev": "ng build --prod --env=dev",
+    "build": "ng build --prod --env=prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
