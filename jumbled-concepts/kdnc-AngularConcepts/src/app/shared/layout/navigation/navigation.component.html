@@ -10,15 +10,23 @@
     traditional href="" links. See documentation for details.
     -->
 
-    <ul saSmartMenu>
+    <ul kdncSmartMenu>
 
       <li routerLinkActive="active">
           <a routerLink="/home" title="Home">
               <i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">{{'Home'}}</span></a>
       </li>
       <li>
-        <a routerLink="/async-loader" title="Async Loader"><i class="fa fa-lg fa-fw fa-home"></i> <span
-          class="menu-item-parent">{{'Async Loader'}}</span></a>
+        <a href="#" title="Reactive Observables"><i class="fa fa-lg fa-fw fa-home"></i> <span
+          class="menu-item-parent">{{'Reactive Observables'}}</span></a>
+        <ul>
+          <li routerLinkActive="active">
+            <a routerLink="/reactive-observables/async-loader">{{'Async Loader'}}</a>
+          </li>
+          <li>
+            <a routerLink="/reactive-observables/publish-subscribe">{{'Publish subscribe'}}</a>
+          </li>
+        </ul>
       </li>
       <!--
             <li class="top-menu-invisible">

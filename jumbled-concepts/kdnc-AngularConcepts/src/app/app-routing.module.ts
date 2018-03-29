@@ -23,9 +23,9 @@ import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout.com
                 loadChildren: 'app/products/product.module#ProductModule'
               },
               {
-                path: 'async-loader',
+                path: 'reactive-observables',
                 data: { preload: true },
-                loadChildren: 'app/loader/async-loader.module#AsyncLoaderModule'
+                loadChildren: 'app/reactive-observables/reactive-observables.module#ReactiveObservablesModule'
               },
             ]
           },

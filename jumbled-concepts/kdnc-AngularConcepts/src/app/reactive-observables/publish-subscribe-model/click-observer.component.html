@@ -1,0 +1,54 @@
+<div id="content">
+
+  <kdnc-widgets-grid>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="well">
+          <div class="alert alert-info alert-block">
+            Click the 'Emit event' button
+          </div>
+
+          <a (click)="publish($event)" class="btn btn-primary btn-lg">
+            Emit event
+          </a>
+
+          <div class="padding-top-15">
+            <ul class="media-list">
+              <li class="media" *ngFor="let click of clicks; let i = index">
+                <div class="media-body">
+                  <h4 class="media-heading">{{i}}: {{click}}</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="well">
+          <h1>Implementing a Publish-Subscribe model using Subjects</h1>
+          <hr class="simple">
+
+          <p>
+            Accomplishing this with a component member method and using it in the click event binding in
+            the template is possible, but this doesn't capture the real value of Observables. You want to be
+            able to expose an Observable on ClickObserverComponent. This will allow any other part of
+            your application to subscribe to these click events and handle them in its own way.
+            Instead, you would like to be able to funnel the click events from the button into the
+            Observable. With a regular Observable instance, this isn't possible since it is only acting as the
+            Subscribe part of the Publish-Subscribe model. To accomplish the Publish aspect, you must use a
+            Subject instance:</p>
+
+          <p>Reference - Angular 2 Cookbook</p>
+        </div>
+      </div>
+    </div>
+
+  </kdnc-widgets-grid>
+
+</div>
+
+
