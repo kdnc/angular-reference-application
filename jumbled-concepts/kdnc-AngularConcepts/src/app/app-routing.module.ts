@@ -27,6 +27,11 @@ import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout.com
                 data: { preload: true },
                 loadChildren: 'app/reactive-observables/reactive-observables.module#ReactiveObservablesModule'
               },
+              {
+                path: 'uploads',
+                data: { preload: true },
+                loadChildren: 'app/uploads/uploads.module#UploadsModule'
+              },
             ]
           },
           { path: '**', redirectTo: 'home' }
