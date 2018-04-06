@@ -22,3 +22,5 @@ interface NodeRequire extends WebpackRequire {}
 declare var jQuery: any;
 
 declare var require: NodeRequire;
+
+declare var Prism;
