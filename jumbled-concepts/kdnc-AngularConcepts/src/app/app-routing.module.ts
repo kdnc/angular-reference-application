@@ -32,6 +32,11 @@ import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout.com
                 data: { preload: true },
                 loadChildren: 'app/uploads/uploads.module#UploadsModule'
               },
+              {
+                path: 'components',
+                data: { preload: true },
+                loadChildren: 'app/components/components.module#ComponentsModule'
+              },
             ]
           },
           { path: '**', redirectTo: 'home' }
