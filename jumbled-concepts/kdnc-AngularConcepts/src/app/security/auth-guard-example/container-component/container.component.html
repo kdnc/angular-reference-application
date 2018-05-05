@@ -1,0 +1,59 @@
+<div id="content">
+
+  <kdnc-widgets-grid>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="well">
+
+          <!-- Note block -->
+          <div class="alert alert-info alert-block">
+            <div>1. set isAuthenticated to 'true' and canAccessProducts to 'true'</div>
+            <div>2. Click on 'Navigate to guarded route' button to access the guarded route</div>
+          </div>
+          <!-- End Note block -->
+
+          <!-- Content block -->
+          <div>
+            <a (click)='toggleIsAuthenticated($event)' class='btn btn-primary btn'>
+              Toggle isAuthenticated
+            </a>
+            <a (click)='toggleCanAccessProducts($event)' class='btn btn-primary btn'>
+              Toggle canAccessProducts
+            </a>
+          </div>
+          <div>
+            <div class='padding-5'>isAuthenticated - <span class="txt-color-red">{{getIsAuthenticatedValue()}}</span></div>
+            <div class='padding-5'>canAccessProducts - <span class="txt-color-red">{{getCanAccessProductsValue()}}</span></div>
+          </div>
+          <div>
+            <a (click)='navigateToGuardedRoute($event)' class='btn btn-primary btn'>
+              Navigate to guarded route
+            </a>
+          </div>
+          <!-- End Content block -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Description block -->
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="well">
+          <h1>Auth Guard Secured Route example</h1>
+          <hr class="simple">
+
+          <p>Reference - Video Tutorial - Angular Security Using JSON Web Tokens / Secure UI Elements and Guard Routes</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Description block -->
+
+  </kdnc-widgets-grid>
+
+</div>
+
+
+
+

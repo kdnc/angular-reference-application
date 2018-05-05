@@ -1,0 +1,49 @@
+<div id="content">
+
+  <kdnc-widgets-grid>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="well">
+
+          <!-- Note block -->
+          <div class="alert alert-info alert-block">
+            <div>FAILURE - You get redirected to this route because you did not made 'isAuthenticated' and 'canAccessProduct' properties
+              to 'true'</div>
+            <div>1. set isAuthenticated to 'true' and canAccessProducts to 'true'</div>
+            <div>2. Click on 'Retry to access guarded url' button to access the previous tried guarded route</div>
+          </div>
+          <!-- End Note block -->
+
+          <!-- Content block -->
+          <div>
+            <div>
+              <a (click)='toggleIsAuthenticated($event)' class='btn btn-primary btn'>
+                Toggle isAuthenticated
+              </a>
+              <a (click)='toggleCanAccessProducts($event)' class='btn btn-primary btn'>
+                Toggle canAccessProducts
+              </a>
+            </div>
+            <div>
+              <div class='padding-5'>isAuthenticated - <span class="txt-color-red">{{getIsAuthenticatedValue()}}</span></div>
+              <div class='padding-5'>canAccessProducts - <span class="txt-color-red">{{getCanAccessProductsValue()}}</span></div>
+            </div>
+            <a (click)='retryToNavigateToReturnUrl($event)' class='btn btn-primary btn'>
+              Retry to access guarded url
+            </a>
+          </div>
+          <!-- End Content block -->
+
+        </div>
+      </div>
+    </div>
+
+
+  </kdnc-widgets-grid>
+
+</div>
+
+
+
+

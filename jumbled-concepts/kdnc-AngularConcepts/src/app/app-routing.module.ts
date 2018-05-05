@@ -37,6 +37,11 @@ import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout.com
                 data: { preload: true },
                 loadChildren: 'app/components/components.module#ComponentsModule'
               },
+              {
+                path: 'security/auth-guard/example-v1',
+                data: { preload: true },
+                loadChildren: 'app/security/auth-guard-example/auth-guard.module#AuthGuardModule'
+              },
             ]
           },
           { path: '**', redirectTo: 'home' }
