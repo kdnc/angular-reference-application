@@ -3,6 +3,10 @@ import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 
+import {
+  ModalModule
+} from 'ngx-bootstrap';
+
 import { KdncLayoutModule } from './layout';
 
 import { KdncEcommerceWidgetsModule } from './widgets/kdncecommerce-widgets.module';
@@ -16,6 +20,8 @@ import { KdncEcommerceWidgetsModule } from './widgets/kdncecommerce-widgets.modu
   ],
   exports: [
     CommonModule, FormsModule, RouterModule,
+
+    ModalModule,
 
     KdncLayoutModule,
     KdncEcommerceWidgetsModule
