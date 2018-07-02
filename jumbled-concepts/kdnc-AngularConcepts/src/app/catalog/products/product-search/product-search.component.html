@@ -1,0 +1,31 @@
+<div id="content">
+  <div class="row">
+    <kdnc-big-breadcrumbs [items]="['Products']"
+                          icon="pencil-square-o"
+                          class="col-xs-12 col-sm-9 col-md-9 col-lg-9"></kdnc-big-breadcrumbs>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+      <a class="btn btn-primary pull-right header-btn">
+        <i class="fa fa-plus-square"></i> &nbsp;Add new</a>
+    </div>
+  </div>
+
+  <kdnc-widgets-grid>
+    <div class="row">
+      <article class="col-sm-12 col-md-12 col-lg-12">
+        <div kdnc-widget [editbutton]="false" [custombutton]="false">
+          <header>
+            <span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+            <h2>Products List </h2>
+          </header>
+          <div>
+            <div class="widget-body no-padding">
+              <kdnc-product-list></kdnc-product-list>
+            </div>
+          </div>
+
+        </div>
+      </article>
+    </div>
+  </kdnc-widgets-grid>
+
+</div>

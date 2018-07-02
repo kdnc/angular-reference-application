@@ -18,7 +18,12 @@ import { MainLayoutComponent } from './shared/layout/app-layouts/main-layout.com
               },
               { path: 'home', component: WelcomeComponent },
               {
-                path: 'products',
+                path: 'product',
+                data: { preload: true },
+                loadChildren: 'app/catalog/products/product.module#ProductModule'
+              },
+              {
+                path: 'products2',
                 data: { preload: true },
                 loadChildren: 'app/products/product.module#ProductModule'
               },
