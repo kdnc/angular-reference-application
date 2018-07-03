@@ -1,0 +1,25 @@
+<form [formGroup]="addProductForm" (ngSubmit)="onAddProductFormSubmit()"
+      novalidate="novalidate" class="form-horizontal">
+
+  <fieldset>
+    <div class="form-group">
+      <label class="col-lg-3 control-label">Product Name <sup>*</sup></label>
+      <div class="col-lg-4">
+        <input type="text" class="form-control" name="title"
+               formControlName="title"/>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="form-actions">
+    <div class="row">
+      <div class="col-md-12">
+        <button class="btn btn-primary" type="submit">
+          <i class="fa fa-save"></i>
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+
+</form>

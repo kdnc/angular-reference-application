@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from '../../../shared/models/domain/product/product';
+import { ProductService } from '../../../shared/services/product/product.service';
 
 @Component({
     templateUrl: './product-add.component.html',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductAddComponent implements OnInit {
 
-    public selectedAddProductTabIndex = 0;
-
-    constructor() { }
+    constructor(private productService: ProductService) { }
 
     ngOnInit(): void {
     }
+
+  handleNewProductAdded(product: Product) {
+    this.productService.saveProduct(product).subscribe(res => {
+      console.log(res);
+    }, error => {
+      console.log(error);
+    });
+  }
 }

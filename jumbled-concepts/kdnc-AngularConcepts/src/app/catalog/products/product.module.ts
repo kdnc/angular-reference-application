@@ -11,6 +11,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { ProductSearchComponent } from './product-search/product-search.component';
 import { ProductListComponent } from './product-search/product-list/product-list.component';
 import { ProductAddComponent } from './product-add/product-add.component';
+import { ProductAddFormComponent } from './product-add/product-add-form/product-add-form.component';
 
 @NgModule({
   imports: [
@@ -33,7 +34,8 @@ import { ProductAddComponent } from './product-add/product-add.component';
   declarations: [
     ProductSearchComponent,
     ProductListComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    ProductAddFormComponent
   ],
   providers: [
   ]
